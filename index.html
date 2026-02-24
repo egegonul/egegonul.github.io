@@ -599,16 +599,6 @@
 
       <div class="research-topic reveal">
         <div>
-          <span class="topic-label">Circuit Design</span>
-          <div class="topic-title">Oscillator-Based Ising &amp; Potts Machines</div>
-        </div>
-        <div class="topic-body">
-          Ising machines are physical systems that naturally evolve toward low-energy states, making them powerful solvers for NP-hard combinatorial optimization problems such as Max-Cut and graph coloring. I design and build CMOS ring oscillator networks that emulate this behavior in silicon. Coupled oscillators synchronize in patterns that encode the solution to an optimization problem, achieving results that classical digital processors cannot match in energy efficiency. My work covers both the circuit-level design of coupled CMOS oscillators and the ASIC microarchitecture that orchestrates them at scale.
-        </div>
-      </div>
-
-      <div class="research-topic reveal">
-        <div>
           <span class="topic-label">Architecture</span>
           <div class="topic-title">ASIC Accelerators for Combinatorial Optimization</div>
         </div>
@@ -629,11 +619,21 @@
 
       <div class="research-topic reveal">
         <div>
-          <span class="topic-label">GPU / TPU</span>
+          <span class="topic-label">GPU / TPU / Custom Kernels</span>
           <div class="topic-title">GPU &amp; TPU Algorithm Optimization</div>
         </div>
         <div class="topic-body">
           Before committing an algorithm to silicon, I optimize it extensively on programmable accelerators. For GPUs, I write custom CUDA kernels applying kernel fusion, quantization, and graph reordering to exploit the memory hierarchy. For Google TPUs, I reformulate solver algorithms in JAX to map cleanly onto systolic array architectures. This cross-platform work produces practical high-performance solvers and deep insight into which algorithmic patterns are worth moving to custom hardware.
+        </div>
+      </div>
+
+      <div class="research-topic reveal">
+        <div>
+          <span class="topic-label">ASIC Acceleration</span>
+          <div class="topic-title">Oscillator-Based Ising &amp; Potts Machines</div>
+        </div>
+        <div class="topic-body">
+          Ising machines are physical systems that naturally evolve toward low-energy states, making them powerful solvers for NP-hard combinatorial optimization problems such as Max-Cut and graph coloring. I design and build CMOS ring oscillator networks that emulate this behavior in silicon. Coupled oscillators synchronize in patterns that encode the solution to an optimization problem, achieving results that classical digital processors cannot match in energy efficiency. My work covers both the circuit-level design of coupled CMOS oscillators and the ASIC microarchitecture that orchestrates them at scale.
         </div>
       </div>
 
@@ -650,7 +650,7 @@
     </div>
     <div class="edu-list">
       <div class="edu-item reveal">
-        <div class="edu-date">Sep 2022 – Present</div>
+        <div class="edu-date">Sep 2022 – Mar 2026</div>
         <div>
           <div class="edu-degree">Ph.D. in Electrical &amp; Computer Engineering</div>
           <div class="edu-school">Drexel University · Philadelphia, PA</div>
@@ -662,6 +662,17 @@
         <div>
           <div class="edu-degree">B.S. in Electrical &amp; Electronics Engineering</div>
           <div class="edu-school">Middle East Technical University · Ankara, Turkey</div>
+        </div>
+      </div>
+      <div class="edu-item reveal">
+        <div class="edu-date">Sep 2013 – Jul 2017</div>
+        <div>
+          <div class="edu-degree">High School Diploma</div>
+          <div class="edu-school">TED Ankara College Foundation High School · Ankara, Turkey</div>
+          <ul class="exp-bullets" style="margin-top:12px;">
+            <li>Selected for the TUBITAK Science Olympics national team in Computer Science.</li>
+            <li>Advanced to the finals of TUBITAK's Scientific Projects Competition with an optical character recognition engine and a companion Android application built around it.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -682,11 +693,12 @@
           <div class="exp-role">Research Assistant</div>
           <div class="exp-org">VANDAL Lab · Drexel University</div>
           <ul class="exp-bullets">
-            <li>Designed ASIC accelerators for physics-inspired combinatorial optimization, achieving major power and performance gains over GPU-based baselines.</li>
-            <li>Built a low-power deep learning inference engine using adiabatic reversible logic, targeting transformer workloads.</li>
-            <li>Architected a scalable SoC that combines Ising solver cores with a general-purpose CPU to tackle larger problem instances.</li>
-            <li>Developed and optimized high-throughput GPU and TPU solvers using custom CUDA kernels and JAX-based implementations.</li>
-            <li>Built a cycle-accurate simulator and automated design-space exploration framework for custom accelerator architectures.</li>
+            <li>Exploiting the natural dynamics of coupled oscillator networks to solve NP-hard combinatorial problems — engineering physical systems that "want" to find the optimal solution, then co-designing the algorithm and hardware together to extract maximum performance from the underlying physics.</li>
+            <li>Investigating low-power deep learning inference by harnessing adiabatic logic — circuits that recycle switching energy back to the power supply rather than dissipating it as heat, fundamentally rethinking how computation and energy interact at the transistor level.</li>
+            <li>Architecting a scalable SoC that decomposes problems too large for a single chip, distributes them across a heterogeneous mix of Ising solver cores and a general-purpose CPU, and merges partial solutions — extending the reach of physics-based computing to real-world problem scales.</li>
+            <li>Pushing combinatorial solvers to their limits on GPUs and TPUs — rewriting algorithms from the ground up to match the memory hierarchy and execution model of each platform, squeezing out performance that naive implementations leave on the table.</li>
+            <li>Building the tooling that makes research reproducible and rigorous: a cycle-accurate simulator that predicts hardware behavior before tapeout and an automated design-space explorer that navigates the trade-offs between performance, power, and area.</li>
+            <li>Designing a many-core ASIC that obliterates GPU latency by orchestrating data flow across a heterogeneous multi-core system through custom NoC fabrics and fine-tuned interconnects — extracting absolute peak performance and ultra-low power from digitally emulated physics to crack problems once considered computationally impossible.</li>
           </ul>
         </div>
       </div>
@@ -696,8 +708,8 @@
           <div class="exp-role">Research Assistant</div>
           <div class="exp-org">TUBITAK · Scientific and Technological Research Council of Turkey</div>
           <ul class="exp-bullets">
-            <li>Developed efficient RNN/LSTM inference on embedded ARM processors using quantized neural networks.</li>
-            <li>Designed a hybrid reasoning engine combining deep learning with symbolic AI to reduce data requirements.</li>
+            <li>Investigated how far quantized neural networks could be pushed on resource-constrained ARM processors — compressing models to run inference at the edge without sacrificing the accuracy that makes them useful.</li>
+            <li>Designed a hybrid reasoning engine that fuses statistical pattern recognition with structured symbolic logic, dramatically reducing the volume of labeled data needed to teach a system to reason.</li>
           </ul>
         </div>
       </div>
@@ -707,7 +719,7 @@
           <div class="exp-role">Applied Deep Learning Intern</div>
           <div class="exp-org">Tractus Technology · Ankara, Turkey</div>
           <ul class="exp-bullets">
-            <li>Built a real-time computer vision system for automated fault detection in data center infrastructure.</li>
+            <li>Deployed a real-time computer vision pipeline that watches live data center infrastructure and flags faults the moment they appear — turning a manual inspection problem into an always-on automated system.</li>
           </ul>
         </div>
       </div>
